@@ -1,1 +1,23 @@
 @import "tailwindcss";
+@layer base {
+  tr {
+    @apply border-b border-slate-200
+  }
+  td{
+    @apply py-3
+  }
+  th{
+  @apply py-3
+  }
+}
+@theme{
+  
+}
+@layer components{
+  .status {
+  @apply bg-green-700 text-white px-3.5 py-1 font-medium rounded;
+}
+  .inactive {
+    @apply bg-red-700  text-white px-3.5 py-1 font-medium rounded;
+  }
+}
