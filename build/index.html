@@ -23,15 +23,17 @@
     </ul>
   </div>
   <div class="w-full">
-    <div class="flex justify-between items-center p-4 shadow flex-wrap px-8 border-slate-200 border-1">
+    <div class="flex justify-between items-center p-4 shadow flex-wrap px-8 border-slate-200 ">
       <div>
         <h1 class="text-3xl font-bold">Dashboard</h1>
       </div>
-      <div class="flex items-center gap-3 flex-wrap">
-        
-        <input type="search" placeholder="Search..." class=" text-lg p-3 border-1 border-stone-300 rounded-2xl">
+      <div class="flex items-center gap-3 flex-wrap  ">
+        <div class="bg-white rounded-2xl  border-slate-200  p-3 border-2">
+          <span class=""><i class="fa-solid fa-magnifying-glass "></i></span>
+        <input type="search" placeholder="Search..." class=" text-lg  pl-10  ">
+        </div>
         <img src="images/profile.jpg" alt="profile-image" class="w-12 h-12  rounded-full ">
-        
+        <img src="images/down-chevron.png" alt="" class="">
       </div>
     </div>
     <div class="flex flex-col flex-wrap sm:flex-row  text-slate-900">
@@ -53,44 +55,53 @@
     </div>
     </div>
     <section class="flex flex-wrap p-4m-6 gap-3">
-      <div class=" bg-white w-[70%] m-5 drop-shadow-xl rounded-2xl px-7">
-        <h3 class=" py-3 border-b border-slate-200">Recent Users</h3>
-        <table class=" text-left w-full ">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Role</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Aron Smith</td>
-              <td>aron@gmail.com</td>
-              <td>Admin</td>
-              <td> <span class="status">Active</span></td>
-            </tr>
-            <tr>
-              <td>Jhon Smith</td>
-              <td>jhon@gmail.com</td>
-              <td>Editor</td>
-              <td><span class="status">Active</span></td>
-            </tr>
-            <tr>
-              <td>Arne Slot</td>
-              <td>arne@gmail.com</td>
-              <td>Member</td>
-              <td><span class="inactive">Inactive</span></td>
-            </tr>
-            <tr>
-              <td>Jurgon Klopp</td>
-              <td>jurgon@gmail.com</td>
-              <td>Subscriber</td>
-              <td><span class="status">Active</span></td>
-            </tr>
-          </tbody>
-        </table>
+    <div class=" bg-white w-[70%] m-5 drop-shadow-xl rounded-2xl px-7 ">
+      <h3 class=" py-3 border-b border-slate-200 font-bold text-xl">Recent Users</h3>
+      <table class=" text-left w-full ">
+        <thead>
+          <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aron Smith</td>
+          <td>aron@gmail.com</td>
+          <td>Admin</td>
+          <td> <span class="status">Active</span></td>
+        </tr>
+        <tr>
+          <td>Jhon Smith</td>
+          <td>jhon@gmail.com</td>
+          <td>Editor</td>
+          <td><span class="status">Active</span></td>
+        </tr>
+        <tr>
+          <td>Arne Slot</td>
+          <td>arne@gmail.com</td>
+          <td>Member</td>
+          <td><span class="inactive">Inactive</span></td>
+        </tr>
+        <tr>
+          <td>Jurgon Klopp</td>
+          <td>jurgon@gmail.com</td>
+          <td>Subscriber</td>
+          <td><span class="status">Active</span></td>
+        </tr>
+      </tbody>
+    </table>
+        <div class="flex justify-end w-full p-2">
+          <div class="border-2 border-slate-300 rounded">
+            <button class="p-2 text-2xl"><i class="fa-solid fa-circle-chevron-left"></i></button>
+            <span class="p-2 text-2xl">|</span>
+            <button class="p-2 text-2xl"><i class="fa-solid fa-circle-chevron-right"></i></button> 
+          </div>
+           
+        </div>
+        
       </div>
       <div>
         <p>jhvm</p>
