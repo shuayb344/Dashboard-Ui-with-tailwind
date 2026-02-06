@@ -9,7 +9,7 @@
 
 </head>
 <body class="felx justify-center items-center bg-stone-300 min-h-screen">
-<div class=" bg-slate-50 flex sm:w-[75%] mx-auto mt-6 rounded-2xl  ">
+<div class=" bg-slate-50 flex sm:w-[75%] mx-auto mt-6 rounded-2xl relative ">
   <div class=" hidden lg:block bg-slate-800 text-white p-7 rounded-2xl relative ">
     <div class="border-b-green-400 border-b w-full align-text-top ">
       <h2 class=" text-2xl font-semibold p-3 ">DashboardPro</h2>
@@ -17,7 +17,7 @@
     <div class="flex flex-col">
       <div>
       <ul class="m-5 w-full">
-        <li class="p-4 text-xl font-semibold"> <span class="mr-2.5"><i class="fa-solid fa-grip"></i></span>Dashboard</li> 
+        <li class="p-4 text-xl font-semibold bg-blue-600 w-full"> <span class="mr-2.5"><i class="fa-solid fa-grip"></i></span>Dashboard</li> 
         <li class="p-4 text-xl font-semibold"> <span class="mr-2.5"><i class="fa-solid fa-user"></i></span>User</li> 
         <li class="p-4 text-xl font-semibold"> <span class="mr-2.5"><i class="fa-solid fa-cart-arrow-down"></i></span>Product</li>
         <li class="p-4 text-xl font-semibold"> <span class="mr-2.5"><i class="fa-solid fa-gear"></i></span>Setting</li>
@@ -32,17 +32,18 @@
 
   </div>
   <div class="w-full pb-20">
-    <div class="flex justify-between flex-col xl:flex-row  items-center p-4 shadow flex-wrap px-8 border-slate-200 ">
+    <div class="flex justify-between flex-col lg:flex-row  items-center p-4 shadow flex-wrap px-8 border-slate-200 ">
       <div>
+        <span class="lg:hidden block absolute left-8 top-5 text-3xl"><i class="fa-solid fa-bars"></i></span>
         <h1 class="text-3xl font-bold">Dashboard</h1>
       </div>
-      <div class="flex items-center gap-3 flex-wrap  ">
+      <div class="flex items-center gap-1 xs:gap-3 flex-wrap mt-2 ">
         <div class="bg-white rounded-2xl  border-slate-200  p-3 border-2">
           <span class=""><i class="fa-solid fa-magnifying-glass "></i></span>
-        <input type="search" placeholder="Search..." class=" xs:text-lg  pl-10  ">
+        <input type="search" placeholder="Search..." class=" xs:text-lg px-1.5 xs:pl-10  ">
         </div>
-        <img src="images/profile.jpg" alt="profile-image" class="w-12 h-12  rounded-full ">
-        <img src="images/down-chevron.png" alt="" class="">
+        <img src="images/profile.jpg" alt="profile-image" class="xs:w-12 xs:h-12 h-10 w-10 rounded-full ">
+        <img src="images/down-chevron.png" alt="" class="hidden sm:block">
       </div>
     </div>
     <div class="flex flex-wrap text-slate-900">
@@ -63,8 +64,8 @@
       <p class="text-4xl font-bold pl-2">15% <span><i class="fa-solid fa-angles-up" style="color: #26a269;"></i></span></p>
     </div>
     </div>
-    <section class="flex flex-wrap p-4 gap-3 ">
-    <div class=" bg-white w-full xl:w-[65%]  drop-shadow-xl rounded-2xl p-1 sm:p-4">
+    <section class="flex flex-wrap shrink p-4 gap-3 ">
+    <div class=" bg-white w-full xl:w-[65%]  drop-shadow-xl rounded-2xl p-1 sm:p-4 overflow-x-auto">
       <h3 class=" py-3 border-b border-slate-200 font-bold text-xl">Recent Users</h3>
       <table class=" text-left w-full ">
         <thead>
